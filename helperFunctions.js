@@ -3,7 +3,7 @@ const {
   employeeDepartment,
   employeeRole,
   role,
-} = require('./models/models.js');
+} = require("./models/models.js");
 
 // Helper function to get employee's associated departments
 async function getEmployeeDepartments(employeeId) {
@@ -49,4 +49,8 @@ async function getEmployeeDetails(employeeData) {
   };
 }
 
-module.exports = { getEmployeeDetails };
+module.exports = {
+  getEmployeeDetails,
+  getEmployeeDepartments,
+  getEmployeeRoles,
+};
